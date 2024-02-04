@@ -37,7 +37,7 @@ const Hero = () => {
         className="min-h-[550px] sm:min-h-[600px] bg-gray-100 flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200"
         style={bgImage}
       >
-        <div className="container pb-8 sm:pb-0">
+        <div className=" pb-8 sm:pb-0">
           <div className="grid grid-cols-1 sm:grid-cols-2">
             {/* text content section */}
             <div

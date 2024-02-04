@@ -25,24 +25,33 @@ const ServicesData = [
     description:
       "Lorem ipsum dolor sit amet ipsum dolor sit ametipsum dolor sit amet ipsum dolor sit amet",
   },
+
+  {
+    id: 4,
+    img: Img3,
+    name: "Cold Cofee",
+    description:
+      "Lorem ipsum dolor sit amet ipsum dolor sit ametipsum dolor sit amet ipsum dolor sit amet",
+  },
+  
 ];
 const Services = () => {
   return (
     <>
       <span id="services"></span>
       <div className="py-10">
-        <div className="container">
+        <div className="">
           <div className="text-center mb-20 w-full mx-auto">
-            <p className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary ">
+            <p className="text-3xl bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary ">
               Our Services
             </p>
-            <h1 className="text-3xl font-bold">Services</h1>
-            <p className="text-xs text-gray-400">
+            <h1 className="mt-4 mb-4 text-3xl font-bold">Services</h1>
+            <p className="text-xl text-gray-400">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Perspiciatis delectus architecto error nesciunt,
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-14 md:gap-5 place-items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 md:gap-5 place-items-center mb-24 ">
             {ServicesData.map((service) => (
               <div
                 data-aos="zoom-in"
@@ -71,7 +80,7 @@ const Services = () => {
                       name="rating"
                     /> */}
                   </div>
-                  <h1 className="text-xl font-bold">{service.name}</h1>
+                  <h1 className="text-2xl font-bold mt-16">{service.name}</h1>
                   <p className="text-gray-500 group-hover:text-white duration-high text-sm line-clamp-2">
                     {service.description}
                   </p>
